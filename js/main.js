@@ -13,15 +13,15 @@
  */
 
 /*字符拼接区*/
-	 var introduce='\n  \/*我叫张强，来自甘肃兰州*\/\n  \/*我今年24岁，毕业于青岛工学院，通信工程专业*\/\n  \/*接触前端一年，我的理想是当一名前端工程师*\/\n  \/*来看看我为你准备的菜，先来点CSS，加点基本样式......*\/';
+	 var introduce='\n  \/*大家好，我是沈雨琦,我的朋友们都叫我琦琦*\/\n  \/*其实也没什么事情，就是给你们做一个动态的自我介绍*\/';
 	var sty1='\n   body{\n    transition: all 1s;\n    background:#3f5263;\n     }\n    #sourceBoard{\n    font-family:"微软雅黑";\n    overflow:auto;\n    border:3px solid black;\n    border-radius:5px;\n    width:500px;\n    height:400px;\n    font-size:14px;\n    font-weight:900;\n  }';
 	var trs1 = '\n  \/*似乎有点单调，那么就让语法高亮吧*\/';
     var lightheight = '\n  #sourceBoard{\n   background:#ffffcc\n  }\n    .token.property{\n   color:#905;\n   }\n   .token.comment{\n     color:#cc3300;\n}\n    .token.selector{\n    color:#690;\n     }\n  '; 
-    var trs2 = '  \/*接下来，我需要准备一下简历。先将刚才写的样式踢到一边儿去*\/'
-    var scrollRight = '\n  #sourceBoard{\n    -webkit-transform: rotateY(10deg);\n    -moz-transform: rotateX(10deg);\n     position:relative;\n    left:65%; } \n    \/*OK,接下来开始准备简历板*\/\n  '
+    var trs2 = '  \/*接下来，我需要准备一下我的自我介绍了。先将刚才写的样式踢到一边儿去*\/'
+    var scrollRight = '\n  #sourceBoard{\n    -webkit-transform: rotateY(10deg);\n    -moz-transform: rotateX(10deg);\n     position:relative;\n    left:65%; } \n    \/*OK,接下来开始准备模板*\/\n  '
     var drawBoard = '#drawBoard{\n  color:#fff;\n  float:left;\n  position:relative;\n  top:-440px;\n  width:860px;\n  height:600px;\n  border:5px solid black;\n   border-radius:5px;\n  overflow:auto;\n  }'
-    var resume= '\n  # <center>张强_前端开发简历</center>\n  ----------------------------------------------\n  ## 工作经历: ## \n  ----------------------------------------------\n  ### 1.青岛爱音悦艺术培训学校：音乐教师 ### \n   "虽然跟前端无关，但是简历一定要写出来"。By腾讯HR \n\n  ### 2. 中国兰州网 (政府媒体)：前端开发 ### \n  1.  专题设计\n  2.  频道维护\n  3.  对接后台搭建前端模版\n  4.  前端性能优化与前沿技术学习\n  5.  业务成就：\n  1.主导技术选型、方案设计、代码编写，完成中国兰州网二级子频道页面进行响应式改版。\n      >改版前 : http://news.lanzhou.cn/system/2018/01/27/011502919.shtml\n      >改版后 : http://news.lanzhou.cn/system/2018/01/11/011492028.shtml \n----------------------------------------------\n  ### 技术栈 ### \n----------------------------------------------\n      0. JavaScript/jQuery\n  1. Bootstrap\n  2. Nodejs\n  3. AngularJs\n  4. CSS3\n  5. Ajax\n  6. Webpack\n  ### 项目汇总 ### \n  [https://github.com/ZQ-jhon/-](https://github.com/ZQ-jhon/-)  \n  ### 博客\n  ----------------------------------------------\n  1. CSDN博客：[我的CSDN博客](http://blog.csdn.net/qq_20264891)\n  2. GitHub博客：[我的GitHub博客](https://ZQ-jhon.github.io)'
-    var trs3 = '\n  \/*对了，这个简历是markdown语法，应该改成html才看着舒服。\n  *接下来变个魔术\n  *倒数3个数字\n  *3......\n  *2......\n  *1......\n  *OK,这就是为您准备的菜，祝享用愉快！ */'
+    var resume= '\n  # <center>沈雨琦_一个一般般有趣的girl</center>\n  ----------------------------------------------\n  ## 身高体重: ## \n  ----------------------------------------------\n  ### 别想了，这是不可能告诉你们的 ### \n   \n  ### 兴趣爱好 ### \n----------------------------------------------\n      1.帅哥（越帅越好）\n  2.赚钱（越多越好）\n  3.偶尔玩一玩王者荣耀（被别人追着打的那种）\n  4.斗地主总是输，我的朋友们都不想给我送欢乐豆了\n  5.我还会玩扫雷，一般般厉害\n  6.我很能吃\n  ### 废话板块 ### \n  其实事情的经过是这样的  \n  我的闺蜜小潘是一个软件工程师\n  昨天她在群里给我和小黄分享了一个动态简历，是的,就像你看到的这个一样  \n  当时觉得没什么意思，也就这样吧  /n  但是我的闺蜜小黄花了一天就做出来了，所以我很不服气，就给我自己也来了一个 \n  就这么简单，结束了，嘻嘻  \n  ### 感谢名单\n  ----------------------------------------------\n  \n  1.感谢小黄的技术指导  \n  2.感谢小潘没什么用的兴趣启蒙  \n  好了，结束了
+  var trs3 = '\n  \/*对了，这个简历是markdown语法，应该改成html才看着舒服。\n  *接下来变个魔术\n  *倒数3个数字\n  *3......\n  *2......\n  *1......\n  *OK,这就是我花了一晚上做出来的没什么用的介绍，祝享用愉快！ */'
 	var str = introduce.concat(sty1).concat(trs1).concat(lightheight).concat(trs2).concat(scrollRight).concat(drawBoard).concat(resume).concat(trs3);
 
 	/*常规定义区*/
